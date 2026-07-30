@@ -1,8 +1,9 @@
 name: Build Boards
 
 on:
+  workflow_dispatch:
   push:
-    branches:
+    branches: [ main ]
       - main
       - ci/* # for ci test
   pull_request:
