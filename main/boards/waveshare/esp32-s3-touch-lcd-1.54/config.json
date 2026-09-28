@@ -1,14 +1,18 @@
 {
-    "manufacturer": "waveshare",
-    "type": "esp32-s3-touch-lcd-1.54",
-    "target": "esp32s3",
-    "builds": [
-        {
-            "name": "esp32-s3-touch-lcd-1.54",
-            "sdkconfig_append": [
-                "CONFIG_USE_WECHAT_MESSAGE_STYLE=n",
-                "CONFIG_USE_DEVICE_AEC=y"
-            ]
-        }
-    ]
+  "manufacturer": "waveshare",
+  "type": "esp32-s3-touch-lcd-1.54",
+  "target": "esp32s3",
+  "builds": [
+    {
+      "name": "esp32-s3-touch-lcd-1.54",
+      "sdkconfig_append": [
+        "CONFIG_USE_WECHAT_MESSAGE_STYLE=y",
+        "CONFIG_USE_DEVICE_AEC=y"
+      ]
+    }
+  ],
+  "es8311": {
+    "adc_volume": 24,
+    "dac_volume": -3
+  }
 }
